@@ -55,12 +55,8 @@ function Weather() {
           <div className="weather-box">
             <div className="temp">
               {Math.round(weather.main.temp)}°c
-              {Math.round(weather.min.temp)}°c
-              {Math.round(weather.max.temp)}°c
             </div>
             <div className="weather">{weather.weather[0].main}</div>
-            <div className="weather">{weather.weather[0].min}</div>
-            <div className="weather">{weather.weather[0].max}</div>
           </div>
         </div>
         ) : ('')}
